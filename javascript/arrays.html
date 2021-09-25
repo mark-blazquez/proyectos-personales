@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		primeras pruebas 
+	</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="">
+</head>
+<body>
+    <h1>tienda de deportes </h1>
+    <input id="tema" onclick="cambiarTema()" type="text" value="cambiar a tema oscuro "></input> 
+    <script>
+        var tema=document.getElementById("tema");
+        var body= document.body;
+
+        function cambiarTema(){
+            
+            if (body.style.background=="black"){
+                body.style.background="white"
+                body.style.color="black"
+            }else{
+                body.style.background="black"
+                body.style.color="white"
+            }
+        }
+    </script>
+    
+    <h2>los articulos de nuetra pag web son :</br>
+    <script>
+        var articulos =["bambas","camisetas","pantalones"]
+        for (articulo in articulos) {
+            document.write(articulo +"</br>") ;/*no saca el nombre*/
+        }
+    </script>
+    </h2>
+    <h2 style="color: red;">el seegundo articulo del array es <em> 
+    <script>
+        document.write(articulos[1]);
+        var objeto1=articulos[1]
+            
+    </script>
+    </em></h2>
+    <!-- el unshift sirve para meter en el array cosas al principio ej articulos.unshift("balon") push al final;-->
+    <!-- el promp es el input -->
+
+    <h1>programacion orientada a objetos </h1>
+    <div id="primero" >
+        <h2>este es el div que va a ser modificado por javascript</h2>
+    </div>
+    <script>
+        var div1=document.getElementById("primero");
+        if (objeto1=="pantalones"){
+            div1.style.background="blue"
+        }
+        else{
+            div1.style.background="green"
+        };
+    </script>
+</body>
+</html>
